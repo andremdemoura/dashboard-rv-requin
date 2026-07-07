@@ -203,9 +203,6 @@ def inject_theme():
             background-color: #081527;
             border-right: 1px solid rgba(201,162,39,0.25);
         }}
-        [data-testid="stSidebar"] * {{
-            color: #e8edf5;
-        }}
         .requin-header {{
             display: flex;
             align-items: center;
@@ -229,21 +226,26 @@ def inject_theme():
         }}
         .requin-header p {{
             margin: 4px 0 0 0;
-            color: #9fb1cc;
+            color: #b8c6de;
             font-size: 13px;
             letter-spacing: 0.03em;
             text-transform: uppercase;
         }}
         [data-testid="stMetric"] {{
-            background: rgba(255,255,255,0.03);
+            background: rgba(255,255,255,0.04);
             border: 1px solid rgba(201,162,39,0.18);
             border-radius: 10px;
             padding: 10px 14px;
         }}
-        [data-testid="stMetricLabel"] {{
-            color: #9fb1cc !important;
+        [data-testid="stMetricLabel"] * {{
+            color: #b8c6de !important;
+            font-weight: 500;
         }}
-        h2, h3, h4 {{
+        [data-testid="stMetricValue"] * {{
+            color: #f4f6fa !important;
+            font-weight: 700;
+        }}
+        h1, h2, h3, h4 {{
             font-family: Georgia, 'Times New Roman', serif;
             color: #f4f6fa !important;
         }}
